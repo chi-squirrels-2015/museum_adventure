@@ -1,0 +1,18 @@
+<h1>Upcoming Events</h1>
+
+<table>
+  <thead>
+    <th>Event Name</th>
+    <th>Event Date</th>
+    <th>Event Description</th>
+  </thead>
+
+  <% @events.each do |event| %>
+    <tr>
+      <td><a href="/events/<%= event.id %>"><%= event.name %></a></td>
+      <td><%= event.date %></td>
+      <td><%= event.description %></td>
+    </tr>
+  <% end %>
+</table>
+

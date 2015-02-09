@@ -1,0 +1,9 @@
+<h1>Welcome to The Art Institute</h1>
+<!-- #@collections -->
+<% @collections.each do |collection| %>
+  <a href="/collections/<%= collection.id %>"><%= collection.name %></a>
+<% end %>
+
+
+<br><br>
+<a href="/events">Events</a>
