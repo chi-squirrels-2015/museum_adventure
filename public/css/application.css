@@ -10,3 +10,11 @@ table {
   padding: 20px;
   text-align: center;
 }
+
+li {
+  list-style: none;
+}
+
+#artwork {
+  width: 500px;
+}

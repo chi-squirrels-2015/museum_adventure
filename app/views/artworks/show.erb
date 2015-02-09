@@ -1,1 +1,12 @@
-show.erb
+This is Miriam's beautiful drawing.
+
+<br><br>
+
+<ul>
+  <% @collection.artists.each do |artist| %>
+    <li><a href="/artists/<%=artist.id%>"><%= artist.name %></a></li>
+    <% artist.artworks.each do |artwork| %>
+      <a href="/collections/<%= @collection.id %>/artworks/<%= artwork.id %>"><img id="artwork" src="<%= artwork.url %>"/></a>
+    <% end %>
+  <% end %>
+</ul>
